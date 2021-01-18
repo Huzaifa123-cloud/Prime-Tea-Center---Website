@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTea - Details</title>
+     <!--CUSTOM CSS -->
+        
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--<h1 class="title-header2">Products Details Page</h1>-->
+     <!--- Nav links --->
+     <div id="mainbox" onclick="openFunction()">&#9776; Open</div>
+     <div id="menu" class="sidemenu">
+             <a href="index.html">Home</a> 
+             <a href="products.html">Products</a>
+             <a href="#">About Us</a>
+             <a href="#">Contact Us</a>
+             <a href="#">Shop Information</a>
+             <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+     </div>
+     <!--- Row for Image and Short Description--->
+     
+        <div class="row">
+            <div class="column">
+              <img src="images/CTC NORMAL.jpg" style="width:100%;" class="image-grid"/>
+            </div>
+            <div class="column">
+              <h2 class="product-title">CTC NORMAL</h2>
+              <p class="long-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Ipsum nam dolores perspiciatis maxime provident mollitia est aliquid, consequuntur quas totam repellendus? 
+                  Adipisci blanditiis cum ipsa mollitia necessitatibus ducimus eum sunt.</p>
+                <p>Price: </p>
+                    <br>
+                <button class="btn-contact">Contact</button>
+                    <br></br>
+                <h4>Flavour</h4>
+                    <br>
+                <p>Enjoy the refreshing flavour of new shoots ideal for a present or for guests.</p>
+                    <br>
+                    <img src="images/tea_flavor.jpg">
+            </div>
+          </div>
+     
+     
+      
+        
+     <script type="text/javascript">
+        function openFunction() {
+            document.getElementById("menu").style.width="300px";
+            document.getElementById("mainbox").style.marginLeft="300px";
+        }
+        function closeFunction() {
+            document.getElementById("menu").style.width="0px";
+            document.getElementById("mainbox").style.marginLeft="0px";
+            document.getElementById("mainbox").innerHTML="&#9776; Open";
+        }
+    </script>
+    
+</body>
+</html>

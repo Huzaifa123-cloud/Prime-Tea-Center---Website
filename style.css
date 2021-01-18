@@ -1,0 +1,213 @@
+section {
+    text-align: center;
+    color: #eee;
+}
+
+ul {
+    -webkit-column-count: 2; 
+    column-count: 2;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    text-align: left;
+    background-color: #eee;
+}
+/******** HAMBURGER MENU LINKS ***********/
+body {
+    font-family: sans-serif;
+    margin: auto;
+}
+#mainbox {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+}
+.sidemenu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all  .5s;
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+}
+.sidemenu a:hover {
+    color: white;
+}
+.sidemenu .closebtn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 36px;
+    margin-right: 32px;
+}
+/**************** PRODUCT LIST STYLING **********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title-header {
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.wrapper {
+    width: 90%;
+    margin: 5px auto;
+}
+.img-area {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display:  -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.single-img {
+    width: calc(33% - 2rem);
+    margin: 16px;
+    cursor: pointer;
+}
+.img-content {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.front, .back {
+    min-height: 300px;
+    height: auto;
+    border-radius: 5px;
+    color: #ffffff;
+    background-size: cover; 
+    transition: transform 0.7s cubic-bezier(0.4, 0.2,0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 22px;
+}
+.back {
+    background-color: crimson;
+}
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: 0.7;
+    background-color: #000000;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+.back {
+    text-shadow: 1px, 1px, #000000;
+    font-family: monospace;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.inner {
+    transform: translateY(-50%) translateZ(60px) scale(0.9);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    perspective: inherit;
+    z-index: 2;
+}
+.front .inner span {
+    position: relative;
+    font-family: monospace;
+    font-size: 20px;
+}
+.img-content .back {
+    transform: rotateY(180deg);
+    transform: preserve-3d;
+}
+.img-content:hover .back {
+    transform: rotateY(0deg);
+    transform: preserve-3d;
+}
+.img-content .front {
+    transform: rotateY(0deg);
+    transform: preserve-3d;
+}
+.img-content:hover .front {
+    transform: rotateY(-180deg);
+    transform: preserve-3d;
+}
+/***************** DETAILS PAGE STYLING ************************/
+.title-header2 {
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.column .image-grid {
+    margin-top: 12px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.product-title {
+    font-family: monospace;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 5px;
+    font-weight: 400;
+    text-align: center;
+}
+.long-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn-contact {
+    position: relative;
+    width: 245px;
+    height: 100px;
+    border: 1px solid #5d6666;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: .06em !important;
+    margin-bottom: 5px;
+    align-items: center;
+}
+

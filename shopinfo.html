@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTea - ShopInfo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- CSS Custom links-->
+    <link href="style.css" rel="stylesheet">
+    
+    <style>
+        /***************** SHOP INFORMATION PAGE STYLING ************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/shop_main_photo.png);
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.contact .content p {
+    font-size: 20px;
+    color: #ffffff;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000000;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactImage {
+    width: 40%;
+    padding: 40px;
+    
+}
+.contactImage img {
+    position: relative;
+    height: 300px;
+}
+
+ol.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ol.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ol.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+ol.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ol.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+    </style>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+
+<div id="mainbox" onclick="openFunction()">&#9776; Open</div>
+        <div id="menu" class="sidemenu">
+        <a href="index.html">Home</a>
+        <a href="products.php">Products</a>
+        <a href="#">About Us</a>
+        <a href="contactus.php">Contact Us</a>
+        <a href="shopinfo.html">Shop Information</a>
+        <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+        </div>
+
+   <section class="contact">
+        <div class="content">
+            <h2>Shop Information</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dignissimos magnam esse corrupti exercitationem, rem adipisci eum fugiat deserunt sint fugit perspiciatis ad, 
+                totam vitae aliquid ullam recusandae porro, beatae voluptatibus?</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address:</h3>
+                        <p>4671 Sugar Camp Road, <br>Owatonna, Minnesota,<br>55060</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Telphone:</h3>
+                        <p>123456789</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email:</h3>
+                        <p>hoziallabux@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactImage">
+                <img src="images/green-tea-hot-healthy-herbal.jpg" alt="">
+            </div>
+        </div>
+   </section>
+      <!--- Footer breadcrumbs --->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active"><a href="shopinfo.html">Shop Info</a></li>
+        </ol>
+  
+<script type="text/javascript">
+function openFunction() {
+    document.getElementById("menu").style.width="300px";
+    document.getElementById("mainbox").style.marginLeft="300px";
+}
+function closeFunction() {
+    document.getElementById("menu").style.width="0px";
+    document.getElementById("mainbox").style.marginLeft="0px";
+    document.getElementById("mainbox").innerHTML="&#9776; Open";
+}
+</script>
+</body>
+</html>

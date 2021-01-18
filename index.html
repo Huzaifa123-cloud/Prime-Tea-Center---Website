@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTea - Home</title>
+    <!-- CSS Custom links-->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .slider {
+           background-image: url(images/green-tea-hot-healthy-herbal.jpg); 
+           background-size: cover;
+           height: 100vh;
+       }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <section>
+            <h1>Prime Tea</h1>
+            <ul>
+                
+                <li><a href="products.php">Products</a></li>
+                <li><a href="">About Tea</a></li>
+                <li><a href="">Tea Guide</a></li>
+                <li><a href="">Hamada Blends</a></li>
+                <li><a href="">Tashinamu</a></li>
+            </ul>
+        </section>
+            <div id="mainbox" onclick="openFunction()">&#9776; Open</div>
+          <div id="menu" class="sidemenu">
+            <a href="index.html">Home</a>
+            <a href="products.php">Products</a>
+            <a href="#">About Us</a>
+            <a href="contactus.php">Contact Us</a>
+            <a href="shopinfo.html">Shop Information</a>
+            <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+          </div>
+          
+    </div>
+    <script type="text/javascript">
+        function openFunction() {
+            document.getElementById("menu").style.width="300px";
+            document.getElementById("mainbox").style.marginLeft="300px";
+        }
+        function closeFunction() {
+            document.getElementById("menu").style.width="0px";
+            document.getElementById("mainbox").style.marginLeft="0px";
+            document.getElementById("mainbox").innerHTML="&#9776; Open";
+        }
+        
+    </script>
+    <script src="script.js"></script>
+    <script src="jquery.ripples-min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
